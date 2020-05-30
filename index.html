@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World weather</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d602e34612.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form id="citysearch-form">
+        <input type="text" class="citysearch" id="citysearch" placeholder= "Search City" />
+        <input type="submit" id="button-submit" value="Search"/>
+        <button id="current-location-button">
+            Current Location
+        </button>
+    </form>
+</div>
+</div>
+    <br />
+    <div class="container">
+         <div class="row">
+        <div class= "col-3"> 
+            <span class="dailyWeathericon">☀</span>
+        </div>
+        <div class= "col-3"> 
+            <p>
+            Right now, in <br/>
+            <strong id="city"></strong> <br/>
+           <span id="description"> </span> 
+        </p>
+
+        <p> <span class="weather" id="main-weather"></span>
+            <sup class="units">
+            <a href="#" id="celsius-link"></a> 
+            <a href="#" id="farhrenheit-link"></a> 
+            </sup>
+        </p>
+        <p> <small id="todaysdate">Sunday 03, <br/> 4 pm</small></p>
+        </div>
+        </div>
+        <br/>
+        <br/>
+        <span class="nextdays">
+        <div class="container">
+            <div class="row">
+                <div class= "col-1">
+                    <span class="day">Mon 04</span>
+                    <br/>
+                    <span class="dailyWeather">☀</span>
+                    <p>25ºC </br> <small class="minimum">16ºC</small></p>
+              </div>
+                <div class= "col-1">
+                    <span class="day">Tue 05</span>
+                    <br/>
+                    <span class="dailyWeather">☀</span>
+                    <p>25ºC </br> <small class="minimum">16ºC</small></p>
+              </div>
+                <div class= "col-1">
+                    <span class="day">Wed 06</span>
+                    <br/>
+                    <span class="dailyWeather">☀</span>
+                    <p>25ºC </br> <small class="minimum">16ºC</small></p>
+                </div>
+                <div class= "col-1">
+                    <span class="day">Thu 07<span>
+                    <br/>
+                    <span class="dailyWeather">☀</span>
+                    <p>25ºC </br> <small class="minimum">16ºC</small></p>
+              </div>
+                <div class= "col-1">
+                    <span class="day">Fri 08</span>
+                    <br/>
+                    <span class="dailyWeather">☀</span>
+                    <p>25ºC </br> <small class="minimum">16ºC</small></p>
+              </div>
+            </div>
+        </span>
+    </br>
+      <div class="container">
+          <div class="row">
+              <div class="col-4">
+                  <span class="units">
+        </span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <script src="src/index.js">
+        </script>
+</body>   
+</html>
